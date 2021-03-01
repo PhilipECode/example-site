@@ -1,0 +1,39 @@
+
+//Variables override
+@import "custom.scss";
+
+//Boostrap import
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//Non-overridable CSS
+
+//Dropdown
+.dropdown-menu {
+  background: #066666;
+  border-radius: 0px;
+  border: 0;
+  top: 95%;
+  a {
+    color: #ffffff;
+    font-size: $small-font-size;
+    font-family: $font-family-sans-serif;
+    padding: 0 7px;
+  }
+}
+.dropdown-toggle{
+  &::after {
+    border-top: 0.20em solid;
+    border-right: 0.20em solid transparent;
+    border-bottom: 0;
+    border-left: 0.20em solid transparent;
+  }
+}
+.dropdown-divider {
+  margin: 3px 5px;
+}
+
+//Line-Break
+hr {
+  border-top:1px solid #000000;
+  border-bottom: 1px solid #616f6f;
+}

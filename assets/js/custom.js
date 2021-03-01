@@ -1,0 +1,10 @@
+$(document).ready(function(){
+        $('.stories-slider').slick({
+                arrows:false,
+                dots:true,
+                autoplay:true
+        });
+        $('#navbar-icon').click(function(){
+                $(this).toggleClass('open');
+        });
+});
